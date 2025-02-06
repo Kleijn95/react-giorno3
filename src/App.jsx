@@ -9,6 +9,7 @@ import fantasy from "../src/data/fantasy.json";
 // import SingleBook from "./components/SingleBook";
 import { Row } from "react-bootstrap";
 import BookList from "./components/Booklist";
+// import SingleBook from "./components/SingleBook";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
       </Container>
       <Container>
         <Row>
-          {/* <SingleBook title={fantasy[0].title} img={fantasy[0].img} price={fantasy[0].price} /> */}
+          {/* <SingleBook asin={fantasy[0].asin} title={fantasy[0].title} img={fantasy[0].img} price={fantasy[0].price} /> */}
           <BookList books={fantasy} />
         </Row>
       </Container>

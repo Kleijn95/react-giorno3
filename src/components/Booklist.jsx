@@ -32,8 +32,8 @@ class BookList extends Component {
         </Form>
 
         {/* Mappa i libri filtrati sulla base della ricerca */}
-        {filteredBooks.map((book, index) => (
-          <SingleBook key={index} title={book.title} img={book.img} price={book.price} />
+        {filteredBooks.map((book) => (
+          <SingleBook key={book.asin} title={book.title} img={book.img} price={book.price} book={book} />
         ))}
       </>
     );
